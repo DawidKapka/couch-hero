@@ -1,0 +1,36 @@
+.container {
+  background: black;
+  height: 60px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+
+  .nav-item {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+
+    &__button {
+      height: 100%;
+      width: 100%;
+      background: none;
+      padding: 0;
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+
+      &__icon-container {
+        transform: translateY(10px);
+      }
+
+      &__icon {
+        transform: scale(1.5);
+
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="nav-item" *ngFor="let category of categories">
+    <a class="nav-item__button">
+      <div>
+        <div class="nav-item__button__icon-container">
+          <mat-icon aria-hidden="false" aria-label="Example home icon" class="nav-item__button__icon">{{category.icon}}</mat-icon>
+        </div>
+        <p class="nav-item__button">{{category.title}}</p>
+      </div>
+    </a>
+  </div>
+</div>
