@@ -20,8 +20,6 @@
       text-align: center;
       color: white;
       font-size: 12px;
-      border-right: 1px solid black;
-      border-left: 1px solid black;
 
       &__icon-container {
         transform: translateY(10px);
@@ -31,6 +29,10 @@
         transform: scale(1.5);
 
       }
+    }
+
+    &__is-active {
+      color: rgba(255,255,255,0.6);
     }
   }
 }
