@@ -1,10 +1,11 @@
 <div class="container">
   <div class="top-tabs">
-    <div class="top-tabs__tab">
-      <p class="top-tabs__tab__label is-active">{{label1}}</p>
+    <div class="top-tabs__tab left" (click)="emitFirstChoosen(true)" [ngClass]="{'is-active': isFirstChoosen}">
+      <p class="top-tabs__tab__label">{{label1}}</p>
     </div>
-    <div class="top-tabs__tab">
+    <div class="top-tabs__tab right" (click)="emitFirstChoosen(false)" [ngClass]="{'is-active': !isFirstChoosen}">
       <p class="top-tabs__tab__label">{{label2}}</p>
     </div>
   </div>
 </div>
+

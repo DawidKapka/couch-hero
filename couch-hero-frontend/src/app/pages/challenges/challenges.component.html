@@ -1,3 +1,19 @@
-<div>
-  <p style="color: black;">aaaa</p>
+<app-top-tab label1="Challenges" label2="Favorites" (isFirstChoosenEvent)="toggleFirstChoosen($event)"></app-top-tab>
+<div class="content" *ngIf="isFirstChoosen">
+  <div class="content__item" *ngFor="let challenge of challenges">
+    <p class="content__item__label">{{challenge.title}}</p>
+    <mat-icon aria-hidden="false" aria-label="Arrow" class="content__item__icon">chevron_right</mat-icon>
+  </div>
+</div>
+<div class="content" *ngIf="!isFirstChoosen">
+  <div class="content__item content__item-no-border" *ngFor="let favorite of favorites">
+    <p class="content__item__label">{{favorite.title}}</p>
+    <mat-icon aria-hidden="false" aria-label="Arrow" class="content__item__icon">chevron_right</mat-icon>
+    <div>
+      <div class="content__item content__item-favorite" *ngFor="let choice of favorite.choices">
+        <p class="content__item__label">{{choice}}</p>
+        <mat-icon aria-hidden="false" aria-label="Favorite" class="content__item__icon">star</mat-icon>
+      </div>
+    </div>
+  </div>
 </div>
