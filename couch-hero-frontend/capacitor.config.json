@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "couch-hero-frontend",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

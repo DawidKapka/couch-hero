@@ -1,0 +1,7 @@
+{
+  "name": "couch-hero-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
