@@ -1,0 +1,48 @@
+var counter = 90;
+
+/* function main() {
+  counter--;
+
+  g.clear();
+  // draw the current counter value
+  g.drawString(counter, g.getWidth()/2, g.getHeight()/2);
+  // optional - this keeps the watch LCD lit up
+  g.setFontAlign(0,0);
+  g.setFont("6x8",8);
+  Bangle.setLCDPower(1);
+  Bangle.buzz();
+} */
+
+let isChallengeAcceptable = false;
+
+function onAccept() {
+  console.log("Accept Pressed"); 
+  E.showMenu(); //action when Accept is pressed
+  isChallengeAcceptable = false;
+
+}
+
+function onDeny() {
+  console.log("Deny Pressed"); 
+  E.showMenu(); //action when Deny is pressed
+  isChallengeAcceptable = false;
+}
+
+
+
+function showChallenge() {
+  isChallengeAcceptable = true;
+    E.showMessage("A",  "AAAA");
+  console.log("PopUp shown");
+  setWatch( () => isChallengeAcceptable && onAccept(), BTN1, {edge:"rising", debounce:50, repeat:false});
+  setWatch( () => isChallengeAcceptable && onDeny(), BTN3, {edge:"rising", debounce:50, repeat:false});
+
+}
+
+//wait(Math.floor(Math.random()* 100000 ) + 1);
+console.log('WAITING');
+setTimeout(showChallenge , Math.floor(Math.random()* 10000 )+ 1);
+
+
+//var interval = setInterval(main, 1000);
+
