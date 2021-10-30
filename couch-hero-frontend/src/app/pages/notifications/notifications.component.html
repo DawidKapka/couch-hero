@@ -5,6 +5,11 @@
     <p class="content__min__amount">30</p>
     <p class="content__min__min">min</p>
   </div>
+  <div class="content__user">
+    <img class="content__user__picture" src="assets/img/profile_pic.png">
+    <p class="content__user__name">{{friend.username}}</p>
+  </div>
+  <p class="content__message">Your friend Mary just completed a challenge!</p>
 </div>
 <div class="content" *ngIf="!isFirstChoosen">
     <div class="content__item" *ngFor="let notificationType of notificationTypes">
