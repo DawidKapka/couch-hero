@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {WatchService} from "../../services/watch.service";
 
 @Component({
   selector: 'app-challenges',
@@ -20,12 +21,16 @@ export class ChallengesComponent implements OnInit {
     {title: 'Gapfillers', choices: ['5 Min']}
   ];
 
-  constructor() { }
+  constructor(private watchService: WatchService) { }
 
   ngOnInit() {}
 
   toggleFirstChoosen(event) {
     this.isFirstChoosen = event;
+  }
+
+  connectSW() {
+    this.watchService.connect();
   }
 
 }

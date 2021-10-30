@@ -32,7 +32,12 @@
               }
             ],
             "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": [],
+            "scripts": [
+              {
+                "input": "src/assets/uart.js",
+                "inject": true
+              }
+            ],
             "aot": false,
             "vendorChunk": true,
             "extractLicenses": false,

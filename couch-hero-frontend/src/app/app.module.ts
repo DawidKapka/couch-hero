@@ -19,12 +19,13 @@ import {ActiveTimeComponent} from "./pages/active-time/active-time.component";
 import {TopTabComponent} from "./shared/top-tab/top-tab.component";
 import {ChatComponent} from "./shared/chat/chat.component";
 import {MatSlideToggle} from "@angular/material/slide-toggle";
+import {WatchService} from "./services/watch.service";
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, ChallengesComponent, ProfilePreviewComponent, BedTimeComponent, NotificationsComponent, ActiveTimeComponent, TopTabComponent, ChatComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule, MatListModule, MatButtonModule, MatIconModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, WatchService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
