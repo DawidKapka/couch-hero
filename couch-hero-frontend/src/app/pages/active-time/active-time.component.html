@@ -1,4 +1,5 @@
-<app-top-tab label1="Ongoing Challenges" label2="Completed" (isFirstChoosenEvent)="toggleFirstChoosen($event)"></app-top-tab>
+<app-top-tab label1="Ongoing Challenges" label2="Completed"
+             (isFirstChoosenEvent)="toggleFirstChoosen($event)"></app-top-tab>
 <div class="content" *ngIf="isFirstChoosen">
   <div class="content__wrapper">
     <div class="content__mine">
@@ -13,8 +14,10 @@
             <img class="content__card__content__profile-pic" src="assets/img/profile_pic.png" alt="profile picture">
             <div class="content__card__content__goal-content">
               <p class="content__card__content__goal-content__location">{{challenge.location}}</p>
-              <p class="content__card__content__goal-content__info">{{challenge.completed}} of {{challenge.goal}} completed</p>
-              <p class="content__card__content__goal-content__info">Points: {{challenge.pointsCompleted}}/{{challenge.pointsGoal}}</p>
+              <p class="content__card__content__goal-content__info">{{challenge.completed}} of {{challenge.goal}}
+                completed</p>
+              <p class="content__card__content__goal-content__info">Points: {{challenge.pointsCompleted}}
+                /{{challenge.pointsGoal}}</p>
             </div>
             <div class="content__card__content__weather">
               <p class="content__card__content__weather__main">21°</p>
@@ -25,26 +28,29 @@
       </div>
     </div>
   </div>
-
-  <div class="content__wrapper">
-    <div class="content__friends">
-      <p class="content__label">Friends</p>
-      <div class="content__card" *ngFor="let challenge of friendsChallenges">
-        <div class="content__card__header">
-          <mat-icon class="content__card__header__icon">timer</mat-icon>
-          <p class="content__card__header__label">{{challenge.type.toUpperCase()}}</p>
-        </div>
-        <div class="content__card__content">
-          <div class="content__card__content__profile-container">
-            <img class="content__card__content__profile-pic" src="assets/img/profile_pic.png" alt="profile picture">
-            <div class="content__card__content__goal-content">
-              <p class="content__card__content__goal-content__location">{{challenge.location}}</p>
-              <p class="content__card__content__goal-content__info">{{challenge.completed}} of {{challenge.goal}} completed</p>
-              <p class="content__card__content__goal-content__info">Points: {{challenge.pointsCompleted}}/{{challenge.pointsGoal}}</p>
-            </div>
-            <div class="content__card__content__weather">
-              <p class="content__card__content__weather__main">21°</p>
-              <p class="content__card__content__weather__min-max">23° / 14°</p>
+<div class="content">
+    <div class="content__wrapper">
+      <div class="content__friends">
+        <p class="content__label">Friends</p>
+        <div class="content__card" *ngFor="let challenge of friendsChallenges">
+          <div class="content__card__header">
+            <mat-icon class="content__card__header__icon">timer</mat-icon>
+            <p class="content__card__header__label">{{challenge.type.toUpperCase()}}</p>
+          </div>
+          <div class="content__card__content">
+            <div class="content__card__content__profile-container">
+              <img class="content__card__content__profile-pic" src="assets/img/profile_pic.png" alt="profile picture">
+              <div class="content__card__content__goal-content">
+                <p class="content__card__content__goal-content__location">{{challenge.location}}</p>
+                <p class="content__card__content__goal-content__info">{{challenge.completed}} of {{challenge.goal}}
+                  completed</p>
+                <p class="content__card__content__goal-content__info">Points: {{challenge.pointsCompleted}}
+                  /{{challenge.pointsGoal}}</p>
+              </div>
+              <div class="content__card__content__weather">
+                <p class="content__card__content__weather__main">21°</p>
+                <p class="content__card__content__weather__min-max">23° / 14°</p>
+              </div>
             </div>
           </div>
         </div>
@@ -52,4 +58,37 @@
     </div>
   </div>
 </div>
-<div class="content" *ngIf="!isFirstChoosen"></div>
+
+
+
+<div class="content" *ngIf="!isFirstChoosen">
+  <div class="content__margin">
+    <div class="content__wrapper">
+      <div class="content__mine">
+        <div class="content__card" *ngFor="let challenge of challengesCompleted">
+          <div class="content__card__header">
+            <mat-icon class="content__card__header__icon">timer</mat-icon>
+            <p class="content__card__header__label">{{challenge.type.toUpperCase()}}</p>
+          </div>
+          <div class="content__card__content">
+            <div class="content__card__content__profile-container">
+              <img class="content__card__content__profile-pic" src="assets/img/profile_pic.png" alt="profile picture">
+              <div class="content__card__content__goal-content">
+                <p class="content__card__content__goal-content__location">{{challenge.location}}</p>
+                <p class="content__card__content__goal-content__info">{{challenge.completed}} of {{challenge.goal}}
+                  completed</p>
+                <p class="content__card__content__goal-content__info">Points: {{challenge.pointsCompleted}}
+                  /{{challenge.pointsGoal}}</p>
+              </div>
+              <div class="content__card__content__weather">
+                <p class="content__card__content__weather__main">21°</p>
+                <p class="content__card__content__weather__min-max">23° / 14°</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

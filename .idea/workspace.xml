@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fee8f309-69f2-4ac8-957c-53804880e8e8" name="Changes" comment="started notifications">
+      <change afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/shared/models/chat-message.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
       <updated>1635509896625</updated>
       <workItem from="1635509900022" duration="9404000" />
       <workItem from="1635532910507" duration="3057000" />
-      <workItem from="1635557694463" duration="7679000" />
+      <workItem from="1635557694463" duration="9265000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1635532953164</created>
@@ -94,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635571909408</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="started notifications">
+      <created>1635572092788</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635572092788</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
