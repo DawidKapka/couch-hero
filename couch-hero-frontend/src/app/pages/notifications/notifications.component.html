@@ -1,9 +1,8 @@
 <app-top-tab label1="Notifications" label2="Chat" (isFirstChoosenEvent)="toggleFirstChoosen($event)"></app-top-tab>
-<div class="content" *ngIf="isFirstChoosen">
+<div class="content" *ngIf="isFirstChoosen"></div>
 <div class="content" *ngIf="!isFirstChoosen">
     <div class="content__item" *ngFor="let notificationType of notificationTypes">
       <p class="content__item__label">{{notificationType}}</p>
       <mat-icon aria-hidden="false" aria-label="Arrow" class="content__item__icon">chevron_right</mat-icon>
     </div>
-  </div>
 </div>
