@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotificationsComponent implements OnInit {
 
+  isFirstChoosen: boolean = true;
+  notificationTypes= ['Status', 'Friends', 'Groups'];
+
   constructor() { }
+
+  toggleFirstChoosen(e) {
+    this.isFirstChoosen = e;
+  }
 
   ngOnInit() {}
 
