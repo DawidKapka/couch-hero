@@ -1,3 +1,13 @@
+<html>
+<head>
+<title>Bangle.js HRM<title>
+</head>
+<body>
+<script scr="https://www.puck-js.com/puck.js"></script>
+<button id="btnConnect">Connect</button>
+<p> HRM:<span id="hrmInfo"></span></p>
+<script>
+
 Bangle.setLCDPower(1);
 Bangle.setLCDTimeout(0);
 Bangle.setHRMPower(1);
@@ -95,3 +105,6 @@ function readHRM() {
     lastHrmPt = [hrmOffset, y];
   }
 }
+</script>
+</body>
+</html>

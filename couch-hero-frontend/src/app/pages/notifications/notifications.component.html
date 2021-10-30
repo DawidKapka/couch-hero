@@ -1,5 +1,11 @@
 <app-top-tab label1="Notifications" label2="Chat" (isFirstChoosenEvent)="toggleFirstChoosen($event)"></app-top-tab>
-<div class="content" *ngIf="isFirstChoosen"></div>
+<div class="content" *ngIf="isFirstChoosen">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9396290159566!2d8.304947715916917!3d47.041415434841184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478ffba59d90e2ef%3A0xcc47a4a9bf4a3ed6!2sNetzwerk%20Neubad!5e0!3m2!1sde!2sch!4v1635594880444!5m2!1sde!2sch" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <div class="content__min">
+    <p class="content__min__amount">30</p>
+    <p class="content__min__min">min</p>
+  </div>
+</div>
 <div class="content" *ngIf="!isFirstChoosen">
     <div class="content__item" *ngFor="let notificationType of notificationTypes">
       <p class="content__item__label">{{notificationType}}</p>

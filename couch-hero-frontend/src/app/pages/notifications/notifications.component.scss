@@ -6,6 +6,31 @@
   height: 100%;
   overflow: auto;
 
+  &__min {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #27B4F7;
+    position: relative;
+    top: -40px;
+    right: -230px;
+
+    &__amount {
+      color: white;
+      font-size: 32px;
+      margin: 0;
+      margin-left: 10px;
+    }
+
+    &__min {
+      color: white;
+      margin: 0;
+      margin-left: 16px;
+      margin-top: -5px;
+    }
+
+  }
+
   &__item {
     border-bottom: 1px solid dimgray;
     border-collapse: collapse;

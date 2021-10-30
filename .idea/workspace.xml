@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fee8f309-69f2-4ac8-957c-53804880e8e8" name="Changes" comment="started notifications">
+    <list default="true" id="fee8f309-69f2-4ac8-957c-53804880e8e8" name="Changes" comment="finished chat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/challenges/challenges.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/challenges/challenges.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/services/hrm-monitor" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/services/hrm-monitor.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/couch-hero-frontend/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.run:android">
     <configuration name="build:ios" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/couch-hero-frontend/package.json" />
       <command value="run" />
@@ -50,8 +51,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="run:android" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/couch-hero-frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run:android" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.run:android" />
         <item itemvalue="npm.build:ios" />
       </list>
     </recent_temporary>
@@ -67,7 +79,7 @@
       <workItem from="1635509900022" duration="9404000" />
       <workItem from="1635532910507" duration="3057000" />
       <workItem from="1635557694463" duration="9265000" />
-      <workItem from="1635582643684" duration="832000" />
+      <workItem from="1635582643684" duration="7537000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1635532953164</created>
@@ -104,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635572092788</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finished chat">
+      <created>1635583544085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635583544085</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +133,7 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="correct space" />
     <MESSAGE value="started notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="started notifications" />
+    <MESSAGE value="finished chat" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished chat" />
   </component>
 </project>
