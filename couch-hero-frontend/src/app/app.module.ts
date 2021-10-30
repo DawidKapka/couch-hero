@@ -19,7 +19,7 @@ import {ActiveTimeComponent} from "./pages/active-time/active-time.component";
 import {TopTabComponent} from "./shared/top-tab/top-tab.component";
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent, ChallengesComponent, ProfilePreviewComponent, BedTimeComponent, NotificationsComponent, ActiveTimeComponent, TopTabComponent, TopTabComponent],
+  declarations: [AppComponent, NavigationComponent, ChallengesComponent, ProfilePreviewComponent, BedTimeComponent, NotificationsComponent, ActiveTimeComponent, TopTabComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule, MatListModule, MatButtonModule, MatIconModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

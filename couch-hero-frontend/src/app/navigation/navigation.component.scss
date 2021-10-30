@@ -5,6 +5,7 @@
   position: absolute;
   bottom: 0;
   display: flex;
+  padding-bottom: 70px;
 
   .nav-item {
     width: 25vw;
@@ -18,7 +19,7 @@
       padding: 0;
       text-decoration: none;
       text-align: center;
-      color: white;
+      color: rgba(255,255,255,0.6);
       font-size: 12px;
 
       &__icon-container {
@@ -32,7 +33,7 @@
     }
 
     &__is-active {
-      color: rgba(255,255,255,0.6);
+      color: rgba(255,255,255,1);
     }
   }
 }

@@ -1,11 +1,22 @@
-<br><br>
-<div class="circle" id="circle1">
-<p>Sleep analysis</p>
-</div>
-<div class="circle" id="circle2">
-<p>Screen analysis</p>
-</div>
-<div class="circle" id="circle3">
-<p>Mood analysis</p>
-</div>
+<app-top-tab label1="Sleep time" label2="Statistics" (isFirstChoosenEvent)="setFirstChoosen($event)"></app-top-tab>
 
+<div class="container" *ngIf="!isFirstChoosen">
+  <div class="container__circle-container">
+    <div class="container__circle-container__circle">
+      <mat-icon class="container__circle-container__circle__icon">bed</mat-icon>
+    </div>
+    <p class="container__circle-container__label">Sleep Analysis</p>
+  </div>
+  <div class="container__circle-container">
+    <div class="container__circle-container__circle">
+      <mat-icon class="container__circle-container__circle__icon">smartphone</mat-icon>
+    </div>
+    <p class="container__circle-container__label">Screen Analytics</p>
+  </div>
+  <div class="container__circle-container">
+    <div class="container__circle-container__circle">
+      <mat-icon class="container__circle-container__circle__icon">emoji_emotions</mat-icon>
+    </div>
+    <p class="container__circle-container__label">Mood  Analysis</p>
+  </div>
+</div>

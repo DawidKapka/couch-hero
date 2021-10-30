@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bed-time.component.scss'],
 })
 export class BedTimeComponent implements OnInit {
+  isFirstChoosen: boolean = true;
 
   constructor() { }
 
   ngOnInit() {}
 
+  setFirstChoosen(event) {
+    this.isFirstChoosen = event;
+  }
 }
