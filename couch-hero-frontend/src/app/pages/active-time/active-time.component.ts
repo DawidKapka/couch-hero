@@ -15,9 +15,9 @@ export class ActiveTimeComponent implements OnInit {
     {type: 'running', author: this.userService.getFriend(), location: 'Lucerne', goal: '10km', completed:'5km', pointsGoal: 100, pointsCompleted: 50},
   ]
   challengesCompleted: Challenge[] = [
-    {type: 'running', author: this.userService.getFriend(), location: 'Lucerne', goal: '10km', completed:'5km', pointsGoal: 100, pointsCompleted: 50},
-    {type: 'running', author: this.userService.getFriend(), location: 'Zürich', goal: '15km', completed:'12km', pointsGoal: 100, pointsCompleted: 70},
-    {type: 'running', author: this.userService.getFriend(), location: 'Bern', goal: '20km', completed:'10km', pointsGoal: 100, pointsCompleted: 90},
+    {type: 'running', author: this.userService.getFriend(), location: 'Lucerne', goal: '10km', completed:'10km', pointsGoal: 100, pointsCompleted: 100},
+    {type: 'running', author: this.userService.getFriend(), location: 'Zürich', goal: '15km', completed:'15km', pointsGoal: 100, pointsCompleted: 100},
+    {type: 'running', author: this.userService.getFriend(), location: 'Bern', goal: '20km', completed:'20km', pointsGoal: 100, pointsCompleted: 100},
     {type: 'running', author: this.userService.getFriend(), location: 'Basel', goal: '3km', completed:'3km', pointsGoal: 100, pointsCompleted: 100},
   ]
 

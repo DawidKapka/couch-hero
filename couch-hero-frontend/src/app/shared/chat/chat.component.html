@@ -1,0 +1,8 @@
+<div class="container">
+  <p class="chat__name">{{friend.username}}</p>
+  <div class="container__messages">
+    <div class="message-bubble" *ngFor="let message of messages" [ngClass]="{'message-bubble__own': message.sender === 'user'}">
+      {{message.content}}
+    </div>
+  </div>
+</div>

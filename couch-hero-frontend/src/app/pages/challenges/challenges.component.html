@@ -1,5 +1,8 @@
 <app-top-tab label1="Challenges" label2="Favorites" (isFirstChoosenEvent)="toggleFirstChoosen($event)"></app-top-tab>
 <div class="content" *ngIf="isFirstChoosen">
+  <div class="content__connect-button">
+    <button mat-raised-button>Sync Smartwatch</button>
+  </div>
   <div class="content__item" *ngFor="let challenge of challenges">
     <p class="content__item__label">{{challenge.title}}</p>
     <mat-icon aria-hidden="false" aria-label="Arrow" class="content__item__icon">chevron_right</mat-icon>

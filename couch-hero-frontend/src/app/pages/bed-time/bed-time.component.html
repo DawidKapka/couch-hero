@@ -1,5 +1,19 @@
 <app-top-tab label1="Sleep time" label2="Statistics" (isFirstChoosenEvent)="setFirstChoosen($event)"></app-top-tab>
-
+<div class="container" *ngIf="isFirstChoosen">
+  <div class="container__datepicker">
+    <ion-datetime placeholder="Select Date"></ion-datetime>
+  </div>
+  <div class="container__button">
+    <button class="button-alarm">Set alarm</button>
+  </div>
+  <div class="alarms">
+    <p class="alarms__label">Alarms set for tomorrow</p>
+    <div class="alarms__alarm" *ngFor="let alarm of alarms">
+      <p class="alarms__alarm__time">{{alarm.time}}</p>
+      <ion-toggle [checked]="alarm.isSet" (ionChange)="alarm.isSet = !alarm.isSet" class="alarms__alarm__toggle"></ion-toggle>
+    </div>
+  </div>
+</div>
 <div class="container" *ngIf="!isFirstChoosen">
   <div class="container__circle-container">
     <div class="container__circle-container__circle">

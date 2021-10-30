@@ -4,6 +4,14 @@
   left: 2vw;
   width: 84vw;
 
+  &__datepicker {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
   &__circle-container {
     display: flex;
     padding-top: 40px;
@@ -31,6 +39,40 @@
     &__label {
       margin-left: 20px;
       margin-top: 26px;
+    }
+  }
+  .button-alarm {
+    text-align: center;
+    background: white;
+    color: #099CE1;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-left: 12vw;
+  }
+  .alarms{
+
+    &__label {
+      font-size: 14px;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+
+    &__alarm {
+      display: flex;
+
+      &__toggle {
+        position: absolute;
+        right: 0;
+        transform: translateY(10px);
+      }
+
+      &__time {
+        margin-left: 40px;
+      }
     }
   }
 }

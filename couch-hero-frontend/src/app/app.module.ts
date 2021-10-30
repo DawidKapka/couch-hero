@@ -18,6 +18,7 @@ import {NotificationsComponent} from "./pages/notifications/notifications.compon
 import {ActiveTimeComponent} from "./pages/active-time/active-time.component";
 import {TopTabComponent} from "./shared/top-tab/top-tab.component";
 import {ChatComponent} from "./shared/chat/chat.component";
+import {MatSlideToggle} from "@angular/material/slide-toggle";
 
 @NgModule({
   declarations: [AppComponent, NavigationComponent, ChallengesComponent, ProfilePreviewComponent, BedTimeComponent, NotificationsComponent, ActiveTimeComponent, TopTabComponent, ChatComponent],

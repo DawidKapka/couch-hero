@@ -6,6 +6,11 @@
   height: 100%;
   overflow: auto;
 
+  &__connect-button {
+    display: flex;
+    justify-content: center;
+  }
+
   &__item {
     border-bottom: 1px solid dimgray;
     border-collapse: collapse;

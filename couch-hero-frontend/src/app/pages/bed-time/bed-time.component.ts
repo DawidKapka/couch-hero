@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Alarm} from "../../shared/models/alarm.model";
 
 @Component({
   selector: 'app-bed-time',
@@ -7,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BedTimeComponent implements OnInit {
   isFirstChoosen: boolean = true;
+
+  alarms: Alarm[] = [
+    {time: '06:45am', isSet: true },
+    {time: '07:00am', isSet: true}
+  ]
 
   constructor() { }
 
