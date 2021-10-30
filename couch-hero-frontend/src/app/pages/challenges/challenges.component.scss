@@ -1,9 +1,10 @@
 .content {
   position: relative;
-  top: 40px;
+  top: 30px;
   left: 8vw;
   width: 84vw;
   height: 100%;
+  overflow: auto;
 
   &__item {
     border-bottom: 1px solid dimgray;
