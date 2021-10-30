@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fee8f309-69f2-4ac8-957c-53804880e8e8" name="Changes" comment="started notifications">
-      <change afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/shared/models/chat-message.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/active-time/active-time.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/pages/notifications/notifications.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/couch-hero-frontend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/couch-hero-frontend/src/app/services/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
       <workItem from="1635509900022" duration="9404000" />
       <workItem from="1635532910507" duration="3057000" />
       <workItem from="1635557694463" duration="9265000" />
+      <workItem from="1635582643684" duration="832000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1635532953164</created>

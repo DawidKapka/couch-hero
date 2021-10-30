@@ -6,7 +6,7 @@ import {User} from "../shared/models/user.model";
 })
 export class UserService {
     private user: User = {username: 'Jane', points: 150};
-    private friend: User = {username: 'Gustav420', points: 60};
+    private friend: User = {username: 'Mary', points: 60};
 
     getUsername(): string { return this.user.username; }
 
